@@ -27,3 +27,12 @@ def Fibo(n):
         return fibTable[n]
 
 print Fibo(10)
+
+# OR.
+
+def ImpFibo(n):
+    a, b = 0, 1
+    for i in xrange(n):
+        a, b = b, a+b
+    return a
+print ImpFibo(10)
